@@ -30,36 +30,82 @@
 <body>
   <main>
     <h1>Privacy Policy</h1>
+    <p><em>Last updated: October 1, 2026</em></p>
 
     <p>
       This policy applies to personal OAuth applications operated by the site owner
       solely for access to the owner's own Google account and services.
     </p>
 
-    <h2>Google user data</h2>
-    <p>
-      The application may request access to Google Drive data as required for personal
-      file synchronization and management through rclone.
-    </p>
+    <h2>Google user data accessed</h2>
+    <ul>
+      <li>
+        <strong>Google Drive</strong> (rclone): files and folders in the owner's own Drive,
+        as required for personal file synchronization and management.
+      </li>
+      <li>
+        <strong>Gmail</strong> (Gmail notifier): read-only access to messages and labels in the
+        owner's own mailbox, including sender, subject, date, labels, and message body text.
+      </li>
+    </ul>
 
     <h2>Use of data</h2>
     <p>
-      Google user data is used only to perform actions explicitly initiated by the site owner,
+      Google Drive data is used only to perform actions explicitly initiated by the site owner,
       such as listing, reading, uploading, updating, moving, or deleting files in the owner's
       own Google Drive.
     </p>
-
-    <h2>Storage and sharing</h2>
     <p>
-      Google user data is not sold, shared with third parties, or used for advertising.
-      OAuth credentials and tokens are retained only as needed for the owner's private use
-      and are not intentionally disclosed publicly.
+      Gmail data is used only to decide whether a newly received message should trigger a
+      notification to the owner, and to improve that decision using labels the owner applies
+      as feedback. The Gmail notifier does not send, modify, or delete mail.
+    </p>
+
+    <h2>Third-party processing</h2>
+    <p>
+      To provide notifications, the Gmail notifier sends limited message data to the following
+      services, solely on the owner's behalf:
+    </p>
+    <ul>
+      <li>
+        <strong>TypeSafe AI</strong> — sender, subject, and a truncated excerpt of the message body,
+        used only to classify whether a notification is warranted.
+      </li>
+      <li>
+        <strong>Pushover</strong> — a short notification (such as sender and subject) delivered to the
+        owner's own devices.
+      </li>
+    </ul>
+    <p>
+      Google user data is not shared with any other third party.
+    </p>
+
+    <h2>Storage</h2>
+    <p>
+      Processing records, such as message identifiers, classification results, and the owner's
+      feedback, are stored locally on the owner's computer for the owner's private use.
+      OAuth credentials and tokens are retained only as needed for that use and are not
+      intentionally disclosed publicly.
+    </p>
+
+    <h2>Limited Use</h2>
+    <p>
+      Use and transfer of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the Limited Use requirements. Google user data is not sold, not used for
+      advertising, and not used by the owner to develop, improve, or train generalized
+      AI or machine learning models.
     </p>
 
     <h2>Public availability</h2>
     <p>
-      The OAuth application is intended for personal, non-commercial use by the site owner
-      and is not offered as a public service.
+      These OAuth applications are intended for personal, non-commercial use by the site owner
+      and are not offered as a public service.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      <a href="https://github.com/kni927">github.com/kni927</a>
     </p>
 
     <p>

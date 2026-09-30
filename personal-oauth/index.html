@@ -16,10 +16,13 @@
       padding: 64px 24px;
       line-height: 1.6;
     }
+    h1, h2 {
+      line-height: 1.25;
+    }
     h1 {
       margin-bottom: 0.5rem;
     }
-    p {
+    p, li {
       opacity: 0.88;
     }
     a {
@@ -33,12 +36,20 @@
     <p>
       This page describes personal OAuth applications used only by the site owner
       for private access to the owner's own Google services.
+      The applications are not offered as a public service and are not intended for other users.
     </p>
 
-    <p>
-      One current use is authenticating rclone with the owner's own Google Drive account.
-      The application is not offered as a public service and is not intended for other users.
-    </p>
+    <h2>Current uses</h2>
+    <ul>
+      <li>
+        <strong>rclone</strong> — synchronizes and manages files in the owner's own Google Drive.
+      </li>
+      <li>
+        <strong>Gmail notifier</strong> — a personal script that checks new messages in the owner's
+        own Gmail inbox with read-only access and sends notifications to the owner's own devices
+        for messages that appear to need prompt attention. It does not send, modify, or delete mail.
+      </li>
+    </ul>
 
     <p>
       <a href="privacy.html">Privacy Policy</a>
